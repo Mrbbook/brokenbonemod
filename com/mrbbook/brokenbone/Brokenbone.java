@@ -30,6 +30,36 @@ public class Brokenbone {
   public static Item Painkiller;  //<< Use to heal but not cure
   public static Item Medkit;  //<< Use to cure and add some health
 
+  @EventHandler
+  public void preInit(FMLPreInitializationEvent preinit)
+  {
+
+  //pre in it code go here
+
+  }
+  
+  public void load(FMLInitializationEvent event) {
+    	   
+
+  proxy.registerRenderInformation();  //register on common and client proxy
+
+  }
+  
+  public void postInit(FMLInitializationEvent event) {
+    
+    /*Example of Register in-game item name here
+    
+    Bandage = new itembandage("Bandage");
+    GameRegistry.registerItem(Bandage, "Bandage");
+    Painkiller = new itembandage("Painkiller");
+    GameRegistry.registerItem(Painkiller, "Painkiller");
+    
+    */
+    
+    
+  }
+  
+  
   
 
 }
