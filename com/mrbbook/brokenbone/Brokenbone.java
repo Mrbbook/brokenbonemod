@@ -19,5 +19,17 @@ import net.minecraftforge.common.MinecraftForge;
 public class Brokenbone {
 
 
+  @SidedProxy(serverSide="brokenbone.commproxy", clientSide="brokenbone.clientproxy")
+  public static commproxy side;
+
+  @Mod.Instance("brokenbone")
+
+  
+  //Item declaration
+  public static Item Morphine;   //<< Use when broke
+  public static Item Painkiller;  //<< Use to heal but not cure
+  public static Item Medkit;  //<< Use to cure and add some health
+
+  
 
 }
